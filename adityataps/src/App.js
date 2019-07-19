@@ -1,23 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './APictureOfMe.jpeg';
+import name from './ThisIsMyName.png';
+
+import outlook from './social/microsoftoutlook.svg';
+// import { ReactComponent as outlook } from './social/microsoftoutlook.svg'
+import fb from './social/facebook.svg';
+import github from './social/github.svg';
+import linkedin from './social/linkedin.svg';
+
 import './App.css';
 
 function App() {
+
   return (
-    <div className="App">
+    <div className="Home">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <br></br> 
+{/*        <img src={logo} className="APictureOfMe" alt="logo" height="400" width="400"/> */}
+        <br></br>
+        <img src={name} className="ThisIsMyName" alt="name" height="200" width="800"/>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          
+          <a className="App-link" href="http://www.google.com">about</a> // <a className="App-link" href="http://www.google.com">projects</a> // <a className="App-link" href="http://www.google.com">resumé</a> // <a className="App-link" href="http://www.google.com">contact</a>
+        
+        <br></br>
+
+
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
   );
