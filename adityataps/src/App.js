@@ -37,7 +37,7 @@ function App() {
         <br></br>
         <br></br>
 
-        <div class="icons_container">
+        <div class="icons-container animated fadeIn delay-5">
           <span class="iconify" data-icon="entypo-social:facebook-with-circle" data-inline="false"></span>
           <span class="iconify" data-icon="entypo-social:linkedin-with-circle" data-inline="false"></span>        
           <span class="iconify" data-icon="entypo-social:github-with-circle" data-inline="false"></span>

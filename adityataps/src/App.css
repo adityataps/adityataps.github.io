@@ -41,11 +41,16 @@
 .delay-4 {
   animation-delay: 1.2s;
 }
+.delay-5 {
+  animation-delay:1.7s;
+}
 
-.icons {
+.icons-container {
+  display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .App-link {
-  color: white;  
+  color: white;
 }
