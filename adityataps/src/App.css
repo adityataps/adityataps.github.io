@@ -20,7 +20,32 @@
   color: white;
 }
 
+.delay-1 {
+  animation-delay: .3s;
+}
+.delay-15 {
+  animation-delay: .45s;
+}
+.delay-2 {
+  animation-delay: .6s;
+}
+.delay-25 {
+  animation-delay: .75s;
+}
+.delay-3 {
+  animation-delay: .9s;
+}
+.delay-35 {
+  animation-delay: 1.05s;
+}
+.delay-4 {
+  animation-delay: 1.2s;
+}
+
+.icons {
+  align-items: center;
+}
+
 .App-link {
-  color: white;
-  
+  color: white;  
 }

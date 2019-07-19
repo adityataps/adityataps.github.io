@@ -21,9 +21,27 @@ function App() {
         <img src={name} className="ThisIsMyName" alt="name" height="200" width="800"/>
         <p>
           
-          <a className="App-link" href="http://www.google.com">about</a> // <a className="App-link" href="http://www.google.com">projects</a> // <a className="App-link" href="http://www.google.com">resumé</a> // <a className="App-link" href="http://www.google.com">contact</a>
+          <a className="App-link" 
+          class="animated fadeIn delay-1" href="http://www.google.com">about</a> <b class="animated fadeIn delay-15"> // </b> <a className="App-link" 
+          class="animated fadeIn delay-2" href="http://www.google.com">projects</a> <b class="animated fadeIn delay-25"> // </b> <a className="App-link" 
+          class="animated fadeIn delay-3" href="http://www.google.com">resumé</a> <b class="animated fadeIn delay-35"> // </b> <a className="App-link" 
+          class="animated fadeIn delay-4" href="http://www.google.com">contact</a>
         
         <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+
+        <div class="icons_container">
+          <span class="iconify" data-icon="entypo-social:facebook-with-circle" data-inline="false"></span>
+          <span class="iconify" data-icon="entypo-social:linkedin-with-circle" data-inline="false"></span>        
+          <span class="iconify" data-icon="entypo-social:github-with-circle" data-inline="false"></span>
+        </div>
 
 
         </p>
