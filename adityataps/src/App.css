@@ -57,6 +57,7 @@
   margin-top: 20px;
   color: black;
   text-align: center;
+  font-weight: bold;
 }
 
 .mobile-options {
@@ -64,6 +65,7 @@
   margin-top: 10px;
   text-align: center;
   font-size: x-large;
+  font-weight: bold;
 }
 
 .icons-container {
