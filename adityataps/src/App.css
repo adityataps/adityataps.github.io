@@ -4,6 +4,7 @@
 
 .ThisIsMyName {
 
+  /*position: fixed;*/
   margin-top: 80px;
   display: block;
   pointer-events: none;
@@ -69,12 +70,15 @@
 }
 
 .icons-container {
+
   margin-top: 120px;
   align-content: center;
   display: flex;
   align-items: center;
   justify-content: center;
   color: black;
+  padding-bottom: 5000px;
+
 }
 
 .iconify {

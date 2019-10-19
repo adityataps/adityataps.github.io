@@ -19,7 +19,6 @@ function App() {
         <br></br>
         <img src={name} className="ThisIsMyName" alt="name" height="200" width="800"/>
         <p>
-
             <BrowserView>
           <div class="options-container">
           <a className="App-link" 
@@ -50,7 +49,7 @@ function App() {
         <br></br>
         <br></br>
 
-        <div class="icons-container animated fadeIn delay-5">
+        <div class="icons-container animated fadeIn delay-5" style={{position: "fixed"}}>
 
             <a href="https://www.facebook.com/adits707" rel="noopener noreferrer" target="_blank">
             <icon span className="iconify" data-icon="entypo-social:facebook-with-circle" data-inline="false"></icon>
@@ -65,6 +64,18 @@ function App() {
             </div>
 
         </p>
+
+
+          <pre>
+
+
+
+
+
+          </pre>
+
+
+
       </header>
     </div>
   );
