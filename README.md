@@ -1,2 +1,0 @@
-# adityataps.github.io
-Website
