@@ -8,7 +8,6 @@ import { blog } from './components/screens/blog'
 import { projects } from './components/screens/projects'
 import { resume } from './components/screens/resume'
 import { contact } from './components/screens/contact'
-
 import { test } from './components/screens/test'
 
 function App() {

@@ -22,24 +22,19 @@ export const blog = () => {
                 />
 
                 <div className={"nav-bar"}>
-
                     <img src={name} className={"nav-name"} alt={"aditya tapshalkar"} style={{float:"left"}}/>
-
-                    {/*<div> hello </div>*/}
-
-
 
                     <div className={"nav-links-container"}>
                         <Link to={"/"} className={"nav-link"}> home </Link>
-                        <b>//</b>
+                        <b style={{'user-select': 'none'}}>//</b>
                         <Link to={"/about"} className={"nav-link"}> about </Link>
-                        <b>//</b>
+                        <b style={{'user-select': 'none'}}>//</b>
                         <b style={{'text-shadow': '2px 0 red'}}> blog </b>
-                        <b>//</b>
+                        <b style={{'user-select': 'none'}}>//</b>
                         <Link to={"/projects"} className={"nav-link"}> projects </Link>
-                        <b>//</b>
+                        <b style={{'user-select': 'none'}}>//</b>
                         <Link to={"/resume"} className={"nav-link"}> résumé </Link>
-                        <b>//</b>
+                        <b style={{'user-select': 'none'}}>//</b>
                         <Link to={"/contact"} className={"nav-link"}> contact </Link>
                     </div>
 

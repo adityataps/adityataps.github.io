@@ -1,0 +1,54 @@
+.about-container {
+    position: center;
+    width: 70%;
+    height: 450px;
+    display: table;
+    margin-top: 5%;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: -4;
+    background-color: white;
+}
+
+.about-container .table-row {
+    display: table-row;
+}
+
+.about-container .table-row .table-cell {
+    display: table-cell;
+    width: 50%;
+    padding: 10px;
+}
+
+.about-container .table-row .table-cell .portrait {
+    background-color: orange;
+    position: absolute;
+}
+
+.about-container .table-row .table-cell .about {
+    background-color: aqua;
+    position: absolute;
+}
+
+.picture-me {
+    position: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25%;
+    display: block;
+    width: 50%;
+    height: 50%;
+}
+
+.typist-header {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 13%;
+}
+
+.about-text {
+    margin-top: 5%;
+    width: 62%;
+    font-family: "Lora", serif;
+}

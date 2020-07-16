@@ -21,6 +21,17 @@ export const home = () => {
                    style={{position: 'absolute', zIndex: '-5', '--animate-duration': '5s'}} />
             }
 
+            {isMobile &&
+            <video className={"backgroundVideo animate__animated animate__fadeIn animate__delay-5s"}
+                   src={bubblesFiltered}
+                   autoPlay={"true"}
+                   loop={"true"}
+                   muted={"true"}
+                   style={{position: 'absolute', zIndex: '-5', '--animate-duration': '5s', height: '100%', width: 'auto', 'margin-left': '-100%'}} />
+            }
+
+
+
             <p>
                 <BrowserView>
                     <img src={name} alt={"aditya tapshalkar"} className={"homeName animate__animated animate__fadeIn"} style={{'--animate-duration': '1s'}} />
@@ -28,25 +39,25 @@ export const home = () => {
                         <Link className={"app-link animate__animated animate__fadeIn animate__delay-1s"} style={{'--animate-delay': '1.3s'}} to={"/about"}>
                             about
                         </Link>
-                        <b className={"animate__animated animate__fadeIn animate__delay-1s"} style={{'--animate-delay': '1.45s'}}>
+                        <b className={"animate__animated animate__fadeIn animate__delay-1s"} style={{'--animate-delay': '1.45s', 'user-select': 'none'}}>
                             //
                         </b>
                         <Link className={"app-link animate__animated animate__fadeIn animate__delay-1s"} style={{'--animate-delay': '1.6s'}} to={"/blog"}>
                             blog
                         </Link>
-                        <b className={"animate__animated animate__fadeIn animate__delay-1s"} style={{'--animate-delay': '1.75s'}}>
+                        <b className={"animate__animated animate__fadeIn animate__delay-1s"} style={{'--animate-delay': '1.75s', 'user-select': 'none'}}>
                             //
                         </b>
                         <Link className={"app-link animate__animated animate__fadeIn animate__delay-1s"} style={{'--animate-delay': '1.9s'}} to={"/projects"}>
                             projects
                         </Link>
-                        <b className={"animate__animated animate__fadeIn animate__delay-1s"} style={{'--animate-delay': '2.05s'}}>
+                        <b className={"animate__animated animate__fadeIn animate__delay-1s"} style={{'--animate-delay': '2.05s', 'user-select': 'none'}}>
                             //
                         </b>
                         <Link className={"app-link animate__animated animate__fadeIn animate__delay-1s"} style={{'--animate-delay': '2.2s'}} to={"/resume"}>
                             résumé
                         </Link>
-                        <b className={"animate__animated animate__fadeIn animate__delay-1s"} style={{'--animate-delay': '2.35s'}}>
+                        <b className={"animate__animated animate__fadeIn animate__delay-1s"} style={{'--animate-delay': '2.35s', 'user-select': 'none'}}>
                             //
                         </b>
                         <Link className={"app-link animate__animated animate__fadeIn animate__delay-1s"} style={{'--animate-delay': '2.5s'}} to={"/contact"}>
@@ -57,7 +68,7 @@ export const home = () => {
 
                 <MobileView>
                     <img src={name} alt={"aditya tapshalkar"} className={"homeName animate__animated animate__fadeIn"} style={{'--animate-duration': '1s'}} />
-                    <div id={"mobile-links"}>
+                    <div id={"mobile-links"} style={{'margin-top': '20%'}}>
                         <Link className={"app-link animate__animated animate__fadeIn animate__delay-1s"} style={{'--animate-delay': '1.3s'}} to={"/about"}>
                             about
                         </Link><br/><br/>

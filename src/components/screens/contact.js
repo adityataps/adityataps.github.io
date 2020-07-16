@@ -31,15 +31,15 @@ export const contact = () => {
 
                     <div className={"nav-links-container"}>
                         <Link to={"/"} className={"nav-link"}> home </Link>
-                        <b>//</b>
+                        <b style={{'user-select': 'none'}}>//</b>
                         <Link to={"/about"} className={"nav-link"}> about </Link>
-                        <b>//</b>
+                        <b style={{'user-select': 'none'}}>//</b>
                         <Link to={"/blog"} className={"nav-link"}> blog </Link>
-                        <b>//</b>
+                        <b style={{'user-select': 'none'}}>//</b>
                         <Link to={"/projects"} className={"nav-link"}> projects </Link>
-                        <b>//</b>
+                        <b style={{'user-select': 'none'}}>//</b>
                         <Link to={"/resume"} className={"nav-link"}> résumé </Link>
-                        <b>//</b>
+                        <b style={{'user-select': 'none'}}>//</b>
                         <b style={{'text-shadow': '2px 0 red'}}> contact </b>
                     </div>
 

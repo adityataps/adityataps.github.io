@@ -8,11 +8,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-@font-face {
-  font-family: 'Poiret One';
-  src: local('Poiret One'), url("./components/fonts/PoiretOne-Regular.ttf") format('Truetype');
-}
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
