@@ -15,7 +15,7 @@ import me from '../images/me.png'
 
 export const about = () => {
     return(
-        <div className={"page"}>
+        <div className={"page"} style={{height: '100%', overflow: 'hidden'}}>
 
             <BrowserView>
                 <img src={flowers}
