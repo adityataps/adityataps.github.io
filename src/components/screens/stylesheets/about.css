@@ -21,12 +21,10 @@
 }
 
 .about-container .table-row .table-cell .portrait {
-    background-color: orange;
     position: absolute;
 }
 
 .about-container .table-row .table-cell .about {
-    background-color: aqua;
     position: absolute;
 }
 
@@ -43,7 +41,14 @@
 .typist-header {
     font-family: monospace;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
+    margin-top: 13%;
+}
+
+.typist-mobile {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 13px;
     margin-top: 13%;
 }
 
@@ -52,3 +57,4 @@
     width: 62%;
     font-family: "Lora", serif;
 }
+

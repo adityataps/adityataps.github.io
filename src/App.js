@@ -8,7 +8,9 @@ import { blog } from './components/screens/blog'
 import { projects } from './components/screens/projects'
 import { resume } from './components/screens/resume'
 import { contact } from './components/screens/contact'
+import { notFound } from "./components/screens/notFound";
 import { test } from './components/screens/test'
+
 
 function App() {
   return (
@@ -28,7 +30,7 @@ function App() {
                           <Route path={"/resume"} exact component={resume} />
                           <Route path={"/contact"} exact component={contact} />
                           <Route path={"/test"} exact component={test} />
-                          <Route path={"/"} component={<div>404</div>} />
+                          <Route path={"/"} component={notFound} />
                       </Switch>
                   </CSSTransition>
               </TransitionGroup>

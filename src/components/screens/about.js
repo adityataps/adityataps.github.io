@@ -9,6 +9,8 @@ import 'react-typist/dist/Typist.css'
 import flowers from '../images/flowers.jpg'
 import name from '../images/name.png'
 import me from '../images/me.png'
+import SideBar from '../sidebar';
+import './stylesheets/sidebar.css'
 
 
 
@@ -71,10 +73,51 @@ export const about = () => {
                         </div>
                     </div>
                 </div>
-
             </BrowserView>
 
             <MobileView>
+
+
+                <SideBar />
+
+                <img src={name} alt={""} style={{width: '70%', height: 'auto', position: 'absolute',
+                    'margin-left': '22%', 'margin-top': '-16%'}} />
+
+                <div style={{'margin-top': '22%', width: '80%', display: 'block', 'text-align': 'center', position: 'center', 'margin-left': 'auto', 'margin-right': 'auto'}}>
+
+                    {/*test*/}
+                    <img src={me} alt={"“Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.”\n" +
+                    "― Albert Einstein "} style={{position: 'center', height: '50%', width: '50%', 'margin-left': 'auto', 'margin-right': 'auto', display: 'block'}} />
+
+                    <Typist cursor={{blink: true, element: '|'}} className={"typist-mobile"} style={{position: 'center', 'margin-left': 'auto', 'margin-right': 'auto'}}>
+                        <Typist.Delay ms={750} />
+                        System.out.println("
+                        <b style={{color: 'red'}}>
+                            hello world!
+                        </b>
+                        ");
+                    </Typist>
+
+
+                    <div style={{'margin-left': '10px'}}>
+
+                        <br />
+                        Based in Atlanta, studying AI and user-centric programming
+                        at the Georgia Institute of Technology,
+                        with a penchant for web development.
+                        <br/>
+                        <br/>
+                        Intrigued by design, human-computer interaction, traveling, fine art,
+                        music, photography, and cooking.
+                        <br/>
+                        <br/>
+                        Driven by the unpossible and seeking to be inspired by those around me.
+
+                    </div>
+
+                </div>
+
+
 
             </MobileView>
 
