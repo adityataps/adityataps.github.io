@@ -1,0 +1,36 @@
+.typist-projects {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.projects-container {
+    position: center;
+    width: 90%;
+    height: 75%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: -4;
+    /*background-color: white;*/
+}
+
+.project-cell {
+    transition: 1s;
+    border-style: solid;
+    width: 90%;
+    height: 40px;
+    padding: 10px;
+    margin: 10px;
+    font-family: "Lora", serif;
+    font-size: 14px;
+    color: black;
+}
+
+.project-cell:hover {
+    border-style: solid;
+    transition: 1s;
+    border-color: red;
+
+}

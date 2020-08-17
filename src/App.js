@@ -4,7 +4,6 @@ import { Link, BrowserRouter, Route, Switch, useLocation } from 'react-router-do
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import { home } from './components/screens/home'
 import { about } from './components/screens/about'
-import { blog } from './components/screens/blog'
 import { projects } from './components/screens/projects'
 import { resume } from './components/screens/resume'
 import { contact } from './components/screens/contact'
@@ -25,7 +24,6 @@ function App() {
                       <Switch location={location}>
                           <Route path={"/"} exact component={home} />
                           <Route path={"/about"} exact component={about} />
-                          <Route path={"/blog"} exact component={blog} />
                           <Route path={"/projects"} exact component={projects} />
                           <Route path={"/resume"} exact component={resume} />
                           <Route path={"/contact"} exact component={contact} />

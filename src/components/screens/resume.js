@@ -34,8 +34,6 @@ export const resume = () => {
                         <b style={{'user-select': 'none'}}>//</b>
                         <Link to={"/about"} className={"nav-link"}> about </Link>
                         <b style={{'user-select': 'none'}}>//</b>
-                        <Link to={"/blog"} className={"nav-link"}> blog </Link>
-                        <b style={{'user-select': 'none'}}>//</b>
                         <Link to={"/projects"} className={"nav-link"}> projects </Link>
                         <b style={{'user-select': 'none'}}>//</b>
                         <b style={{'text-shadow': '2px 0 red'}}> résumé </b>

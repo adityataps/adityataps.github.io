@@ -8,7 +8,6 @@ import bubblesFiltered from '../videos/bubblesFiltered.mov'
 import Typist from 'react-typist';
 import {home} from "./home";
 import {about} from "./about";
-import {blog} from "./blog";
 import {projects} from "./projects";
 import {resume} from "./resume";
 import {contact} from "./contact";

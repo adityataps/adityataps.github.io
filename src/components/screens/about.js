@@ -32,8 +32,6 @@ export const about = () => {
                         <b style={{'user-select': 'none'}}>//</b>
                         <b style={{'text-shadow': '2px 0 red'}}> about </b>
                         <b style={{'user-select': 'none'}}>//</b>
-                        <Link to={"/blog"} className={"nav-link"}> blog </Link>
-                        <b style={{'user-select': 'none'}}>//</b>
                         <Link to={"/projects"} className={"nav-link"}> projects </Link>
                         <b style={{'user-select': 'none'}}>//</b>
                         <Link to={"/resume"} className={"nav-link"}> résumé </Link>
@@ -42,14 +40,14 @@ export const about = () => {
                     </div>
                 </div>
 
-                <div className={"about-container"}>
-                    <div className={"table-row"}>
-                        <div className={"table-cell portrait"}>
+                <div className={"content-container"}>
+                    <div className={"about-table-row"}>
+                        <div className={"about-table-cell portrait"}>
                             <img src={me} alt={"the only me is me. are you sure the only you is you?"} className={"picture-me"}/>
                         </div>
-                        <div className={"table-cell about"} style={{position: 'absolute'}}>
-                            <Typist cursor={{blink: true, element: '|'}} className={"typist-header"}>
-                                <Typist.Delay ms={750} />
+                        <div className={"about-table-cell about"} style={{position: 'absolute'}}>
+                            <Typist cursor={{blink: true, element: '|'}} className={"typist-about"}>
+                                <Typist.Delay ms={1500} />
                                 System.out.println("
                                 <b style={{color: 'red'}}>
                                     hello world!
@@ -80,17 +78,17 @@ export const about = () => {
 
                 <SideBar />
 
-                <img src={name} alt={""} style={{width: '70%', height: 'auto', position: 'absolute',
-                    'margin-left': '22%', 'margin-top': '-16%'}} />
+                {/*<img src={name} alt={""} style={{width: '70%', height: 'auto', position: 'absolute',*/}
+                {/*    'margin-left': '22%', 'margin-top': '-16%'}} />*/}
 
-                <div style={{'margin-top': '22%', width: '80%', display: 'block', 'text-align': 'center', position: 'center', 'margin-left': 'auto', 'margin-right': 'auto'}}>
+                <div className={"mobile-container"}>
 
                     {/*test*/}
                     <img src={me} alt={"“Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.”\n" +
-                    "― Albert Einstein "} style={{position: 'center', height: '50%', width: '50%', 'margin-left': 'auto', 'margin-right': 'auto', display: 'block'}} />
+                    "― Albert Einstein "} className={"mobile-me"} />
 
-                    <Typist cursor={{blink: true, element: '|'}} className={"typist-mobile"} style={{position: 'center', 'margin-left': 'auto', 'margin-right': 'auto'}}>
-                        <Typist.Delay ms={750} />
+                    <Typist cursor={{blink: true, element: '|'}} className={"typist-mobile"}>
+                        <Typist.Delay ms={1500} />
                         System.out.println("
                         <b style={{color: 'red'}}>
                             hello world!

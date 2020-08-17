@@ -1,11 +1,15 @@
 import React from 'react';
 import { slide as Menu } from 'react-burger-menu';
+import name from './images/name.png'
 
 
 export default props => {
     return (
 
         <Menu>
+
+            <img src={name} alt={"didn't work"} className={"sidebar-name"} style={{'margin-top': '-10%'}}/>
+
             <a className={"menu-item"} href={"/"}>
                 home
             </a>

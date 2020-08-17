@@ -39,12 +39,6 @@ export const home = () => {
                         <Link className={"app-link animate__animated animate__fadeIn animate__delay-1s"} style={{'--animate-delay': '1.3s'}} to={"/about"}>
                             about
                         </Link>
-                        <b className={"animate__animated animate__fadeIn animate__delay-1s"} style={{'--animate-delay': '1.45s', 'user-select': 'none'}}>
-                            //
-                        </b>
-                        <Link className={"app-link animate__animated animate__fadeIn animate__delay-1s"} style={{'--animate-delay': '1.6s'}} to={"/blog"}>
-                            blog
-                        </Link>
                         <b className={"animate__animated animate__fadeIn animate__delay-1s"} style={{'--animate-delay': '1.75s', 'user-select': 'none'}}>
                             //
                         </b>
@@ -72,9 +66,6 @@ export const home = () => {
                         <Link className={"app-link animate__animated animate__fadeIn animate__delay-1s"} style={{'--animate-delay': '1.3s'}} to={"/about"}>
                             about
                         </Link><br/><br/>
-                        <Link className={"app-link animate__animated animate__fadeIn animate__delay-1s"} style={{'--animate-delay': '1.6s'}} to={"/blog"}>
-                            blog
-                        </Link><br/><br/>
                         <Link className={"app-link animate__animated animate__fadeIn animate__delay-1s"} style={{'--animate-delay': '1.9s'}} to={"/projects"}>
                             projects
                         </Link><br/><br/>
@@ -90,7 +81,7 @@ export const home = () => {
                 <div className={"icons-container animate__animated animate__fadeIn animate__delay-4s"}>
 
                     <a href="https://www.facebook.com/adits707" rel="noopener noreferrer" target="_blank">
-                        <icon span className="iconify" data-icon="entypo-social:facebook-with-circle"
+                        <icon span classNaame="iconify" data-icon="entypo-social:facebook-with-circle"
                               data-inline="false"/>
                     </a>
                     <a href="https://www.linkedin.com/in/adityatapshalkar/" rel="noopener noreferrer" target="_blank">

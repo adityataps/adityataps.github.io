@@ -49,6 +49,7 @@
     margin-left: auto;
     z-index: -4;
     background-color: white;
+    border-style: ridge;
 }
 
 .animate__animated.animate__fadeIn {
