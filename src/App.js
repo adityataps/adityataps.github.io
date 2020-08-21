@@ -6,7 +6,7 @@ import { home } from './components/screens/home'
 import { about } from './components/screens/about'
 import { projects } from './components/screens/projects'
 import { resume } from './components/screens/resume'
-import { contact } from './components/screens/contact'
+import contact from './components/screens/contact'
 import { notFound } from "./components/screens/notFound";
 import { test } from './components/screens/test'
 

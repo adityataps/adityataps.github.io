@@ -18,9 +18,9 @@ export default props => {
                 about
             </a>
 
-            <a className={"menu-item"} href={"/blog"}>
-                blog
-            </a>
+            {/*<a className={"menu-item"} href={"/blog"}>*/}
+            {/*    blog*/}
+            {/*</a>*/}
 
             <a className={"menu-item"} href={"/projects"}>
                 projects

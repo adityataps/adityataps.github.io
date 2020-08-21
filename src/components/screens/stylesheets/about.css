@@ -33,7 +33,7 @@
     margin-top: 13%;
 }
 
-.typist-mobile {
+.typist-about-mobile {
     font-family: monospace;
     font-weight: bold;
     font-size: 13px;
@@ -47,16 +47,6 @@
     margin-top: 5%;
     width: 62%;
     font-family: "Lora", serif;
-}
-
-.mobile-container {
-    margin-top: 30%;
-    width: 80%;
-    display: block;
-    text-align: center;
-    position: center;
-    margin-left: auto;
-    margin-right: auto
 }
 
 .mobile-me {

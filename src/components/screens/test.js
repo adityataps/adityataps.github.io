@@ -13,21 +13,28 @@ import {resume} from "./resume";
 import {contact} from "./contact";
 import {notFound} from "./notFound";
 import SideBar from "../sidebar";
+import PlaceholderResume from "../PlaceholderResume.pdf"
+
+import PDFViewer from "../PDFViewer";
+import PDFJsBackend from '../backends/pdfjs';
+
 
 
 
 
 export const test = () => {
+
     return(
         <div className={"page"}>
 
-
-            <SideBar />
+            <div id={"content-container-test"}>
+                <PDFViewer backend={PDFJsBackend} src={"/ResumePDF/PlaceholderResume.pdf"}/>
+            </div>
 
 
         </div>
 
 
-
     );
+
 };

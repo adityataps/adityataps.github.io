@@ -78,41 +78,39 @@ export const about = () => {
 
                 <SideBar />
 
-                {/*<img src={name} alt={""} style={{width: '70%', height: 'auto', position: 'absolute',*/}
-                {/*    'margin-left': '22%', 'margin-top': '-16%'}} />*/}
+                <div style={{position: "absolute"}}>
+                    <div className={"mobile-container"}>
 
-                <div className={"mobile-container"}>
+                        <img src={me} alt={"“Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.”\n" +
+                        "― Albert Einstein "} className={"mobile-me"} />
 
-                    {/*test*/}
-                    <img src={me} alt={"“Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.”\n" +
-                    "― Albert Einstein "} className={"mobile-me"} />
-
-                    <Typist cursor={{blink: true, element: '|'}} className={"typist-mobile"}>
-                        <Typist.Delay ms={1500} />
-                        System.out.println("
-                        <b style={{color: 'red'}}>
-                            hello world!
-                        </b>
-                        ");
-                    </Typist>
+                        <Typist cursor={{blink: true, element: '|'}} className={"typist-about-mobile"}>
+                            <Typist.Delay ms={1500} />
+                            System.out.println("
+                            <b style={{color: 'red'}}>
+                                hello world!
+                            </b>
+                            ");
+                        </Typist>
 
 
-                    <div style={{'margin-left': '10px'}}>
+                        <div style={{'margin-left': '10px', "font-family": "\"Lora\", serif"}}>
 
-                        <br />
-                        Based in Atlanta, studying AI and user-centric programming
-                        at the Georgia Institute of Technology,
-                        with a penchant for web development.
-                        <br/>
-                        <br/>
-                        Intrigued by design, human-computer interaction, traveling, fine art,
-                        music, photography, and cooking.
-                        <br/>
-                        <br/>
-                        Driven by the unpossible and seeking to be inspired by those around me.
+                            <br />
+                            Based in Atlanta, studying AI and user-centric programming
+                            at the Georgia Institute of Technology,
+                            with a penchant for web development.
+                            <br/>
+                            <br/>
+                            Intrigued by design, human-computer interaction, traveling, fine art,
+                            music, photography, and cooking.
+                            <br/>
+                            <br/>
+                            Driven by the unpossible and seeking to be inspired by those around me.
+
+                        </div>
 
                     </div>
-
                 </div>
 
 

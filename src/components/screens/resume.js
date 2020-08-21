@@ -1,12 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
-import './stylesheets/projects.css';
+import './stylesheets/resume.css';
 import './stylesheets/screens.css';
 import { BrowserView, MobileView, isBrowser, isMobile } from "react-device-detect";
-import 'animate.css'
-import flowers from '../images/flowers.jpg'
-import name from '../images/name.png'
-
+import 'animate.css';
+import flowers from '../images/flowers.jpg';
+import name from '../images/name.png';
+import PDFViewer from "../PDFViewer";
+import PDFJsBackend from "../backends/pdfjs";
+import Sidebar from "../sidebar";
+import Typist from "react-typist";
 
 
 
@@ -25,10 +28,6 @@ export const resume = () => {
 
                     <img src={name} className={"nav-name"} alt={"aditya tapshalkar"} style={{float:"left"}}/>
 
-                    {/*<div> hello </div>*/}
-
-
-
                     <div className={"nav-links-container"}>
                         <Link to={"/"} className={"nav-link"}> home </Link>
                         <b style={{'user-select': 'none'}}>//</b>
@@ -41,31 +40,59 @@ export const resume = () => {
                         <Link to={"/contact"} className={"nav-link"}> contact </Link>
                     </div>
 
+                </div>
+
+                <div id={"content-container-resume"}>
+                    <Typist cursor={{blink: true, element: '|'}} className={"typist-resume"}>
+                        <Typist.Delay ms={500} />
+                        &gt;&gt;&gt; print("
+                        <b style={{color: 'crimson'}}>
+                            my curriculum vitae
+                        </b>
+                        ")
+
+                    </Typist>
+
+                    <div style={{height: "410px"}}>
+                        <PDFViewer backend={PDFJsBackend} src={"/ResumePDF/PlaceholderResume.pdf"}/>
+                    </div>
+
+                </div>
+
+            </BrowserView>
+
+            <MobileView>
+
+                <Sidebar />
+
+                <div style={{position: "absolute"}}>
+                    <div className={"mobile-container"} style={{width: "90%", height: "90%", "position": "fixed", "margin-left": "5%", "margin-top": "20%"}}>
+
+                        <div style={{"text-align": "center"}}>
+                            <Typist cursor={{blink: true, element: '|'}} className={"typist-resume-mobile"}>
+                                <Typist.Delay ms={500} />
+                                &gt;&gt;&gt; print("
+                                <b style={{color: 'crimson'}}>
+                                    my curriculum vitae
+                                </b>
+                                ")
+
+                            </Typist>
+                        </div>
+
+                        <div style={{height: "80%"}}>
+                            <PDFViewer backend={PDFJsBackend} src={"/ResumePDF/PlaceholderResume.pdf"}/>
+                        </div>
 
 
 
-
-
-
-
-
-
-
+                    </div>
                 </div>
 
 
 
 
-
-
-
-                {/*<div className={"aboutContainer animate__animated animate__fadeIn"} >*/}
-                {/*    test*/}
-                {/*</div>*/}
-
-
-            </BrowserView>
-
+            </MobileView>
 
 
 

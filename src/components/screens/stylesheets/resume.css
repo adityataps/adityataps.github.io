@@ -1,0 +1,31 @@
+#content-container-resume {
+    position: center;
+    width: 70%;
+    height: 450px;
+    display: block;
+    margin-top: 4%;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: -4;
+    background-color: white;
+    border-style: ridge;
+    padding: 20px;
+}
+
+.typist-resume {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.typist-resume-mobile {
+    position: center;
+    margin: 10% auto 30px;
+    display: block;
+    font-size: 15px;
+    font-family: monospace;
+    font-weight: bold;
+    /*text-align: center;*/
+}

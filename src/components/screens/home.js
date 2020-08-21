@@ -81,7 +81,7 @@ export const home = () => {
                 <div className={"icons-container animate__animated animate__fadeIn animate__delay-4s"}>
 
                     <a href="https://www.facebook.com/adits707" rel="noopener noreferrer" target="_blank">
-                        <icon span classNaame="iconify" data-icon="entypo-social:facebook-with-circle"
+                        <icon span className="iconify" data-icon="entypo-social:facebook-with-circle"
                               data-inline="false"/>
                     </a>
                     <a href="https://www.linkedin.com/in/adityatapshalkar/" rel="noopener noreferrer" target="_blank">
