@@ -5,6 +5,7 @@ export const notFound = () => {
         <div>
 
             not found
+            bittttch
 
         </div>
     );
