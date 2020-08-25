@@ -22,13 +22,13 @@ function App() {
                                  timeout={500}
                   >
                       <Switch location={location}>
-                          <Route path={"/"} component={home} />
+                          <Route path={"/"} exact component={home} />
                           <Route path={"/about"} exact component={about} />
                           <Route path={"/projects"} exact component={projects} />
                           <Route path={"/resume"} exact component={resume} />
                           <Route path={"/contact"} exact component={contact} />
                           <Route path={"/test"} exact component={test} />
-                          {/*<Route path={"/"} component={notFound} />*/}
+                          <Route path={"/"} component={notFound} />
                       </Switch>
                   </CSSTransition>
               </TransitionGroup>
