@@ -2,7 +2,7 @@
   "name": "adityataps",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://adityataps.github.io/adityataps.github.io",
+  "homepage": "https://adityataps.github.io/aditya.portfolio",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@react-pdf/renderer": "^1.6.10",
