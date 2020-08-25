@@ -4,6 +4,7 @@
     font-size: 18px;
     padding: 10px;
     margin-left: 20px;
+    text-shadow: 1px 1px lightgrey;
 }
 
 .projects-container {
@@ -43,9 +44,10 @@
     position: center;
     margin: 10% auto 30px;
     display: block;
-    font-size: 13px;
+    font-size: 14px;
     font-family: monospace;
     font-weight: bold;
+    text-shadow: 1px 1px lightgrey;
 }
 
 .project-cell-mobile {

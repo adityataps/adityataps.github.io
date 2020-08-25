@@ -9,6 +9,7 @@ import 'react-typist/dist/Typist.css'
 import flowers from '../images/flowers.jpg'
 import name from '../images/name.png'
 import me from '../images/me.png'
+import gothicQ from '../images/gothicQ.jpg'
 import SideBar from '../sidebar';
 import './stylesheets/sidebar.css'
 
@@ -30,7 +31,7 @@ export const about = () => {
                     <div className={"nav-links-container"}>
                         <Link to={"/"} className={"nav-link"}> home </Link>
                         <b style={{'user-select': 'none'}}>//</b>
-                        <b style={{'text-shadow': '2px 0 red'}}> about </b>
+                        <b style={{'text-shadow': '2px 0 crimson'}}> about </b>
                         <b style={{'user-select': 'none'}}>//</b>
                         <Link to={"/projects"} className={"nav-link"}> projects </Link>
                         <b style={{'user-select': 'none'}}>//</b>
@@ -49,7 +50,7 @@ export const about = () => {
                             <Typist cursor={{blink: true, element: '|'}} className={"typist-about"}>
                                 <Typist.Delay ms={1500} />
                                 System.out.println("
-                                <b style={{color: 'red'}}>
+                                <b style={{color: 'crimson'}}>
                                     hello world!
                                 </b>
                                 ");
@@ -76,6 +77,9 @@ export const about = () => {
             <MobileView>
 
 
+
+
+
                 <SideBar />
 
                 <div style={{position: "absolute"}}>
@@ -87,7 +91,7 @@ export const about = () => {
                         <Typist cursor={{blink: true, element: '|'}} className={"typist-about-mobile"}>
                             <Typist.Delay ms={1500} />
                             System.out.println("
-                            <b style={{color: 'red'}}>
+                            <b style={{color: 'crimson'}}>
                                 hello world!
                             </b>
                             ");

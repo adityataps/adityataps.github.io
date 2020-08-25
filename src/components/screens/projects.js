@@ -34,7 +34,7 @@ export const projects = () => {
                         <b style={{'user-select': 'none'}}>//</b>
                         <Link to={"/about"} className={"nav-link"}> about </Link>
                         <b style={{'user-select': 'none'}}>//</b>
-                        <b style={{'text-shadow': '2px 0 red'}}> projects </b>
+                        <b style={{'text-shadow': '2px 0 crimson'}}> projects </b>
                         <b style={{'user-select': 'none'}}>//</b>
                         <Link to={"/resume"} className={"nav-link"}> résumé </Link>
                         <b style={{'user-select': 'none'}}>//</b>
@@ -57,7 +57,7 @@ export const projects = () => {
                         <Typist cursor={{blink: true, element: '|'}} className={"typist-projects"}>
                             <Typist.Delay ms={500} />
                             &lt;div&gt;&nbsp;
-                            <b style={{color: 'red'}}>
+                            <b style={{color: 'crimson'}}>
                                 past works and collaborations
                             </b>
                             &nbsp;&lt;/div&gt;
@@ -122,11 +122,11 @@ export const projects = () => {
 
                         <Typist cursor={{blink: true, element: '|'}} className={"typist-projects-mobile"}>
                             <Typist.Delay ms={500} />
-                            &lt;div&gt;&nbsp;
-                            <b style={{color: 'red'}}>
-                                projects
+                            {/*&lt;div&gt;&nbsp;*/}
+                            <b style={{color: 'crimson'}}>
+                                past works and collaborations
                             </b>
-                            &nbsp;&lt;/div&gt;
+                            {/*&nbsp;&lt;/div&gt;*/}
                         </Typist>
 
 

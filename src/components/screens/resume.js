@@ -35,7 +35,7 @@ export const resume = () => {
                         <b style={{'user-select': 'none'}}>//</b>
                         <Link to={"/projects"} className={"nav-link"}> projects </Link>
                         <b style={{'user-select': 'none'}}>//</b>
-                        <b style={{'text-shadow': '2px 0 red'}}> résumé </b>
+                        <b style={{'text-shadow': '2px 0 crimson'}}> résumé </b>
                         <b style={{'user-select': 'none'}}>//</b>
                         <Link to={"/contact"} className={"nav-link"}> contact </Link>
                     </div>
@@ -51,9 +51,19 @@ export const resume = () => {
                         </b>
                         ")
 
+
+
+
+
+
                     </Typist>
 
-                    <div style={{height: "410px"}}>
+                    <a href={"/ResumePDF/PlaceholderResume.pdf"} style={{"margin-top": "-50px", "float": "right", "font-family": "\"Lora\", serif", "font-size": "50px", "text-decoration": "none"}} download>
+                        📎
+                        {/*Can't see it? No worries. Click here to download.*/}
+                    </a>
+
+                    <div style={{height: "400px"}}>
                         <PDFViewer backend={PDFJsBackend} src={"/ResumePDF/PlaceholderResume.pdf"}/>
                     </div>
 
@@ -80,7 +90,12 @@ export const resume = () => {
                             </Typist>
                         </div>
 
-                        <div style={{height: "80%"}}>
+                        <a href={"/ResumePDF/PlaceholderResume.pdf"} style={{"margin-left": "30px", "font-family": "\"Lora\", serif", "font-size": "12px"}}download>
+                            📎 Can't see it? No worries. Click here to download.
+                        </a>
+
+
+                        <div style={{height: "75%"}}>
                             <PDFViewer backend={PDFJsBackend} src={"/ResumePDF/PlaceholderResume.pdf"}/>
                         </div>
 

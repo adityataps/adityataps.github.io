@@ -11,6 +11,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import axios from 'axios';
+import {Slider} from "@material-ui/core";
+import Sidebar from '../sidebar'
 
 class Contact extends React.Component {
     constructor(props) {
@@ -61,7 +63,7 @@ class Contact extends React.Component {
                             <b style={{'user-select': 'none'}}>//</b>
                             <Link to={"/resume"} className={"nav-link"}> résumé </Link>
                             <b style={{'user-select': 'none'}}>//</b>
-                            <b style={{'text-shadow': '2px 0 red'}}> contact </b>
+                            <b style={{'text-shadow': '2px 0 crimson'}}> contact </b>
                         </div>
 
 
@@ -86,7 +88,7 @@ class Contact extends React.Component {
                                             <div className={"form-group"}>
                                                 <label htmlFor={"name"} className={"form-label"}> Name </label>
                                                 <br/>
-                                                <input type={"text"} style={{width: "100%"}} className={"form-control"} value={this.state.name}
+                                                <input type={"text"} placeholder={"aditya tapshalkar"} style={{width: "100%"}} className={"form-control"} value={this.state.name}
                                                        onChange={this.onNameChange.bind(this)}/>
                                             </div>
                                         </Paper>
@@ -94,9 +96,9 @@ class Contact extends React.Component {
                                     <Grid item xs={6}>
                                         <Paper className={classes.paper} elevation={0}>
                                             <div className={"form-group"}>
-                                                <label htmlFor={"exampleInputEmail1"} className={"form-label"}> Email Address </label>
+                                                <label htmlFor={"exampleInputEmail1"} className={"form-label"}> Email </label>
                                                 <br/>
-                                                <input type={"email"} style={{width: "100%"}} className={"form-control"} aria-describedby={"emailHelp"} value={this.state.email} onChange={this.onEmailChange.bind(this)} />
+                                                <input type={"email"} placeholder={"aditya.taps@gatech.edu"} style={{width: "100%"}} className={"form-control"} aria-describedby={"emailHelp"} value={this.state.email} onChange={this.onEmailChange.bind(this)} />
                                             </div>
                                         </Paper>
                                     </Grid>
@@ -142,6 +144,84 @@ class Contact extends React.Component {
 
 
                 </BrowserView>
+
+                <MobileView>
+
+                    <Sidebar />
+
+                    <div style={{position: "absolute"}}>
+                        <div className={"mobile-container"}>
+
+                            <Typist cursor={{blink: true, element: '|'}} className={"typist-contact-mobile"}>
+                                {/*<Typist.Delay ms={500}/>*/}
+                                {/*Console.WriteLine("*/}
+                                <b style={{color: 'crimson'}}>
+                                    let's keep in touch.
+                                </b>
+                                {/*");*/}
+                            </Typist>
+
+                            <form id={"contact-form"} onSubmit={this.handleSubmit.bind(this)} method={"POST"} style={{"margin-top": "50px"}}>
+                                <div className={classes.root} style={{width: "80%", position: "center", margin: "5% auto"}}>
+                                    <Grid container spacing={2}>
+                                        <Grid item xs={12}>
+                                            <Paper className={classes.paper} elevation={0}>
+                                                <div className={"form-group"}>
+                                                    <label htmlFor={"name"} className={"form-label"}> Name </label>
+                                                    <br/>
+                                                    <input type={"text"} placeholder={"aditya tapshalkar"} style={{width: "100%"}} className={"form-control"} value={this.state.name}
+                                                           onChange={this.onNameChange.bind(this)}/>
+                                                </div>
+                                            </Paper>
+                                        </Grid>
+                                        <Grid item xs={12}>
+                                            <Paper className={classes.paper} elevation={0}>
+                                                <div className={"form-group"}>
+                                                    <label htmlFor={"exampleInputEmail1"} className={"form-label"}> Email </label>
+                                                    <br/>
+                                                    <input type={"email"} placeholder={"aditya.taps@gatech.edu"} style={{width: "100%"}} className={"form-control"} aria-describedby={"emailHelp"} value={this.state.email} onChange={this.onEmailChange.bind(this)} />
+                                                </div>
+                                            </Paper>
+                                        </Grid>
+                                        <Grid item xs={12}>
+                                            <Paper className={classes.paper} elevation={0}>
+                                                <div className={"form-group"}>
+                                                    <label htmlFor={"subject"} className={"form-label"}> Subject </label>
+                                                    <br/>
+                                                    <input type={"text"} style={{width: "100%"}} className={"form-control"} value={this.state.subject} onChange={this.onSubjectChange.bind(this)} />
+                                                </div>
+                                            </Paper>
+                                        </Grid>
+                                        <Grid item xs={12}>
+                                            <Paper className={classes.paper} elevation={0}>
+                                                <div className={"form-group"}>
+                                                    <label htmlFor={"message"} className={"form-label"}> Message </label>
+                                                    <br/>
+                                                    <textarea className={"form-control"} style={{width: "100%"}} rows={"5"} value={this.state.message} onChange={this.onMessageChange.bind(this)} />
+                                                </div>
+                                            </Paper>
+                                        </Grid>
+                                        {/*<Grid item xs={3}>*/}
+                                        {/*    <Paper className={classes.paper}>xs=3</Paper>*/}
+                                        {/*</Grid>*/}
+                                        {/*<Grid item xs={3}>*/}
+                                        {/*    <Paper className={classes.paper}>xs=3</Paper>*/}
+                                        {/*</Grid>*/}
+                                        {/*<Grid item xs={3}>*/}
+                                        {/*    <Paper className={classes.paper}>xs=3</Paper>*/}
+                                        {/*</Grid>*/}
+                                    </Grid>
+                                    <button type={"submit"} className={"btn btn-primary"} style={{"margin-top": "10px"}}> Submit </button>
+                                </div>
+                            </form>
+
+
+                        </div>
+
+
+                    </div>
+
+                </MobileView>
 
 
             </div>

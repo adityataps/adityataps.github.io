@@ -21,7 +21,7 @@
 /* Change color on hover */
 .bm-item:hover {
     transition: 1.5s;
-    color: red;
+    color: crimson;
 }
 
 /* The rest copied directly from react-burger-menu docs */

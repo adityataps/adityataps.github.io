@@ -53,7 +53,7 @@
 
 .app-link:hover {
     transition: 1s;
-    color: red;
+    color: crimson;
     text-shadow: 2px 0 black;
 }
 
@@ -79,7 +79,7 @@
 
 .iconify:hover {
     transition: 1s;
-    color: red;
+    color: crimson;
 }
 
 .iconify:active {
