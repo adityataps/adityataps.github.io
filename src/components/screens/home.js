@@ -93,6 +93,7 @@ export const home = () => {
                               data-inline="false"/>
                     </a>
                 </div>
+                <b className={"animate__animated animate__fadeIn animate__delay-4s"} style={{color: "crimson", position: "center", margin: "auto"}}>This website is a work in progress. Thank you!</b>
             </p>
         </div>
     );
