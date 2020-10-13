@@ -26,7 +26,14 @@ class Contact extends React.Component {
     }
 
 
+
     render() {
+
+        const Mailto = ({ email, subject, body, children }) => {
+            return (
+                <a href={`mailto:${email}?subject=${encodeURIComponent(subject) || ''}&body=${encodeURIComponent(body) || ''}`}>{children}</a>
+            );
+        };
 
         const classes = makeStyles((theme) => ({
             root: {
@@ -80,59 +87,80 @@ class Contact extends React.Component {
                             ");
                         </Typist>
 
-                        <form id={"contact-form"} onSubmit={this.handleSubmit.bind(this)} method={"POST"}>
-                            <div className={classes.root} style={{width: "80%", position: "center", margin: "5% auto"}}>
-                                <Grid container spacing={2}>
-                                    <Grid item xs={6}>
-                                        <Paper className={classes.paper} elevation={0}>
-                                            <div className={"form-group"}>
-                                                <label htmlFor={"name"} className={"form-label"}> Name </label>
-                                                <br/>
-                                                <input type={"text"} placeholder={"aditya tapshalkar"} style={{width: "100%"}} className={"form-control"} value={this.state.name}
-                                                       onChange={this.onNameChange.bind(this)}/>
-                                            </div>
-                                        </Paper>
-                                    </Grid>
-                                    <Grid item xs={6}>
-                                        <Paper className={classes.paper} elevation={0}>
-                                            <div className={"form-group"}>
-                                                <label htmlFor={"exampleInputEmail1"} className={"form-label"}> Email </label>
-                                                <br/>
-                                                <input type={"email"} placeholder={"aditya.taps@gatech.edu"} style={{width: "100%"}} className={"form-control"} aria-describedby={"emailHelp"} value={this.state.email} onChange={this.onEmailChange.bind(this)} />
-                                            </div>
-                                        </Paper>
-                                    </Grid>
-                                    <Grid item xs={12}>
-                                        <Paper className={classes.paper} elevation={0}>
-                                            <div className={"form-group"}>
-                                                <label htmlFor={"subject"} className={"form-label"}> Subject </label>
-                                                <br/>
-                                                <input type={"text"} style={{width: "100%"}} className={"form-control"} value={this.state.subject} onChange={this.onSubjectChange.bind(this)} />
-                                            </div>
-                                        </Paper>
-                                    </Grid>
-                                    <Grid item xs={12}>
-                                        <Paper className={classes.paper} elevation={0}>
-                                            <div className={"form-group"}>
-                                                <label htmlFor={"message"} className={"form-label"}> Message </label>
-                                                <br/>
-                                                <textarea className={"form-control"} style={{width: "100%"}} rows={"5"} value={this.state.message} onChange={this.onMessageChange.bind(this)} />
-                                            </div>
-                                        </Paper>
-                                    </Grid>
-                                    {/*<Grid item xs={3}>*/}
-                                    {/*    <Paper className={classes.paper}>xs=3</Paper>*/}
-                                    {/*</Grid>*/}
-                                    {/*<Grid item xs={3}>*/}
-                                    {/*    <Paper className={classes.paper}>xs=3</Paper>*/}
-                                    {/*</Grid>*/}
-                                    {/*<Grid item xs={3}>*/}
-                                    {/*    <Paper className={classes.paper}>xs=3</Paper>*/}
-                                    {/*</Grid>*/}
-                                </Grid>
-                                <button type={"submit"} className={"btn btn-primary"} style={{"margin-top": "10px"}}> Submit </button>
-                            </div>
-                        </form>
+                        <Typist cursor={{blink: false, element: ' '}} className={"typist-contact-2"} style={{"margin-top": "500%"}}>
+                            <Typist.Delay ms={750}/>
+
+                            <b style={{color: 'crimson'}}>
+                                <a className={"app-link-contact"} href={"mailto:aditya.taps@gatech.edu"}>
+                                    &lt;a href=&#123;&ldquo;mailto:
+                                    <b style={{color: "crimson", "font-family": "Lora, serif"}}>
+                                    aditya.taps@gatech.edu
+                                    </b>
+                                    &rdquo;&#125;&gt;
+                                </a>
+                            </b>
+
+                        </Typist>
+
+                        {/*<form id={"contact-form"} onSubmit={this.handleSubmit.bind(this)} method={"POST"}>*/}
+                        {/*    <div className={classes.root} style={{width: "80%", position: "center", margin: "5% auto"}}>*/}
+                        {/*        <Grid container spacing={2}>*/}
+                        {/*            <Grid item xs={6}>*/}
+                        {/*                <Paper className={classes.paper} elevation={0}>*/}
+                        {/*                    <div className={"form-group"}>*/}
+                        {/*                        <label htmlFor={"name"} className={"form-label"}> Name </label>*/}
+                        {/*                        <br/>*/}
+                        {/*                        <input type={"text"} placeholder={"aditya tapshalkar"} style={{width: "100%"}} className={"form-control"} value={this.state.name}*/}
+                        {/*                               onChange={this.onNameChange.bind(this)}/>*/}
+                        {/*                    </div>*/}
+                        {/*                </Paper>*/}
+                        {/*            </Grid>*/}
+                        {/*            <Grid item xs={6}>*/}
+                        {/*                <Paper className={classes.paper} elevation={0}>*/}
+                        {/*                    <div className={"form-group"}>*/}
+                        {/*                        <label htmlFor={"exampleInputEmail1"} className={"form-label"}> Email </label>*/}
+                        {/*                        <br/>*/}
+                        {/*                        <input type={"email"} placeholder={"aditya.taps@gatech.edu"} style={{width: "100%"}} className={"form-control"} aria-describedby={"emailHelp"} value={this.state.email} onChange={this.onEmailChange.bind(this)} />*/}
+                        {/*                    </div>*/}
+                        {/*                </Paper>*/}
+                        {/*            </Grid>*/}
+                        {/*            <Grid item xs={12}>*/}
+                        {/*                <Paper className={classes.paper} elevation={0}>*/}
+                        {/*                    <div className={"form-group"}>*/}
+                        {/*                        <label htmlFor={"subject"} className={"form-label"}> Subject </label>*/}
+                        {/*                        <br/>*/}
+                        {/*                        <input type={"text"} style={{width: "100%"}} className={"form-control"} value={this.state.subject} onChange={this.onSubjectChange.bind(this)} />*/}
+                        {/*                    </div>*/}
+                        {/*                </Paper>*/}
+                        {/*            </Grid>*/}
+                        {/*            <Grid item xs={12}>*/}
+                        {/*                <Paper className={classes.paper} elevation={0}>*/}
+                        {/*                    <div className={"form-group"}>*/}
+                        {/*                        <label htmlFor={"message"} className={"form-label"}> Message </label>*/}
+                        {/*                        <br/>*/}
+                        {/*                        <textarea className={"form-control"} style={{width: "100%"}} rows={"5"} value={this.state.message} onChange={this.onMessageChange.bind(this)} />*/}
+                        {/*                    </div>*/}
+                        {/*                </Paper>*/}
+                        {/*            </Grid>*/}
+                        {/*            /!*<Grid item xs={3}>*!/*/}
+                        {/*            /!*    <Paper className={classes.paper}>xs=3</Paper>*!/*/}
+                        {/*            /!*</Grid>*!/*/}
+                        {/*            /!*<Grid item xs={3}>*!/*/}
+                        {/*            /!*    <Paper className={classes.paper}>xs=3</Paper>*!/*/}
+                        {/*            /!*</Grid>*!/*/}
+                        {/*            /!*<Grid item xs={3}>*!/*/}
+                        {/*            /!*    <Paper className={classes.paper}>xs=3</Paper>*!/*/}
+                        {/*            /!*</Grid>*!/*/}
+                        {/*        </Grid>*/}
+                        {/*        <button type={"submit"} className={"btn btn-primary"} style={{"margin-top": "10px"}}> Submit </button>*/}
+                        {/*    </div>*/}
+                        {/*</form>*/}
+
+                        {/*<Mailto classname={"mailto"} email={"aditya.taps@gatech.edu"} subject={"Hello and welcome!"} body={"Hello world!"}>*/}
+                        {/*    aditya.taps (at) gatech.edu*/}
+                        {/*</Mailto>*/}
+
+
 
 
                     </div>
@@ -150,7 +178,8 @@ class Contact extends React.Component {
                     <Sidebar />
 
                     <div style={{position: "absolute"}}>
-                        <div className={"mobile-container"}>
+                        <div className={"mobile-container"} style={{width: "90%", height: "90%", "position": "fixed", "margin-left": "5%", "margin-top": "20%"}}>
+
 
                             <Typist cursor={{blink: true, element: '|'}} className={"typist-contact-mobile"}>
                                 {/*<Typist.Delay ms={500}/>*/}
@@ -161,59 +190,68 @@ class Contact extends React.Component {
                                 {/*");*/}
                             </Typist>
 
-                            <form id={"contact-form"} onSubmit={this.handleSubmit.bind(this)} method={"POST"} style={{"margin-top": "50px"}}>
-                                <div className={classes.root} style={{width: "80%", position: "center", margin: "5% auto"}}>
-                                    <Grid container spacing={2}>
-                                        <Grid item xs={12}>
-                                            <Paper className={classes.paper} elevation={0}>
-                                                <div className={"form-group"}>
-                                                    <label htmlFor={"name"} className={"form-label"}> Name </label>
-                                                    <br/>
-                                                    <input type={"text"} placeholder={"aditya tapshalkar"} style={{width: "100%"}} className={"form-control"} value={this.state.name}
-                                                           onChange={this.onNameChange.bind(this)}/>
-                                                </div>
-                                            </Paper>
-                                        </Grid>
-                                        <Grid item xs={12}>
-                                            <Paper className={classes.paper} elevation={0}>
-                                                <div className={"form-group"}>
-                                                    <label htmlFor={"exampleInputEmail1"} className={"form-label"}> Email </label>
-                                                    <br/>
-                                                    <input type={"email"} placeholder={"aditya.taps@gatech.edu"} style={{width: "100%"}} className={"form-control"} aria-describedby={"emailHelp"} value={this.state.email} onChange={this.onEmailChange.bind(this)} />
-                                                </div>
-                                            </Paper>
-                                        </Grid>
-                                        <Grid item xs={12}>
-                                            <Paper className={classes.paper} elevation={0}>
-                                                <div className={"form-group"}>
-                                                    <label htmlFor={"subject"} className={"form-label"}> Subject </label>
-                                                    <br/>
-                                                    <input type={"text"} style={{width: "100%"}} className={"form-control"} value={this.state.subject} onChange={this.onSubjectChange.bind(this)} />
-                                                </div>
-                                            </Paper>
-                                        </Grid>
-                                        <Grid item xs={12}>
-                                            <Paper className={classes.paper} elevation={0}>
-                                                <div className={"form-group"}>
-                                                    <label htmlFor={"message"} className={"form-label"}> Message </label>
-                                                    <br/>
-                                                    <textarea className={"form-control"} style={{width: "100%"}} rows={"5"} value={this.state.message} onChange={this.onMessageChange.bind(this)} />
-                                                </div>
-                                            </Paper>
-                                        </Grid>
-                                        {/*<Grid item xs={3}>*/}
-                                        {/*    <Paper className={classes.paper}>xs=3</Paper>*/}
-                                        {/*</Grid>*/}
-                                        {/*<Grid item xs={3}>*/}
-                                        {/*    <Paper className={classes.paper}>xs=3</Paper>*/}
-                                        {/*</Grid>*/}
-                                        {/*<Grid item xs={3}>*/}
-                                        {/*    <Paper className={classes.paper}>xs=3</Paper>*/}
-                                        {/*</Grid>*/}
-                                    </Grid>
-                                    <button type={"submit"} className={"btn btn-primary"} style={{"margin-top": "10px"}}> Submit </button>
-                                </div>
-                            </form>
+                            <Typist cursor={{blink: false, element: ' '}} className={"typist-contact-2"} style={{"margin-top": "500%"}}>
+                                <Typist.Delay ms={750}/>
+
+                                <b style={{color: 'crimson'}}>
+                                    <a className={"app-link-contact"} style={{"margin-left": "15%"}} href={"mailto:aditya.taps@gatech.edu"}>aditya.taps@gatech.edu</a>
+                                </b>
+
+                            </Typist>
+
+                            {/*<form id={"contact-form"} onSubmit={this.handleSubmit.bind(this)} method={"POST"} style={{"margin-top": "50px"}}>*/}
+                            {/*    <div className={classes.root} style={{width: "80%", position: "center", margin: "5% auto"}}>*/}
+                            {/*        <Grid container spacing={2}>*/}
+                            {/*            <Grid item xs={12}>*/}
+                            {/*                <Paper className={classes.paper} elevation={0}>*/}
+                            {/*                    <div className={"form-group"}>*/}
+                            {/*                        <label htmlFor={"name"} className={"form-label"}> Name </label>*/}
+                            {/*                        <br/>*/}
+                            {/*                        <input type={"text"} placeholder={"aditya tapshalkar"} style={{width: "100%"}} className={"form-control"} value={this.state.name}*/}
+                            {/*                               onChange={this.onNameChange.bind(this)}/>*/}
+                            {/*                    </div>*/}
+                            {/*                </Paper>*/}
+                            {/*            </Grid>*/}
+                            {/*            <Grid item xs={12}>*/}
+                            {/*                <Paper className={classes.paper} elevation={0}>*/}
+                            {/*                    <div className={"form-group"}>*/}
+                            {/*                        <label htmlFor={"exampleInputEmail1"} className={"form-label"}> Email </label>*/}
+                            {/*                        <br/>*/}
+                            {/*                        <input type={"email"} placeholder={"aditya.taps@gatech.edu"} style={{width: "100%"}} className={"form-control"} aria-describedby={"emailHelp"} value={this.state.email} onChange={this.onEmailChange.bind(this)} />*/}
+                            {/*                    </div>*/}
+                            {/*                </Paper>*/}
+                            {/*            </Grid>*/}
+                            {/*            <Grid item xs={12}>*/}
+                            {/*                <Paper className={classes.paper} elevation={0}>*/}
+                            {/*                    <div className={"form-group"}>*/}
+                            {/*                        <label htmlFor={"subject"} className={"form-label"}> Subject </label>*/}
+                            {/*                        <br/>*/}
+                            {/*                        <input type={"text"} style={{width: "100%"}} className={"form-control"} value={this.state.subject} onChange={this.onSubjectChange.bind(this)} />*/}
+                            {/*                    </div>*/}
+                            {/*                </Paper>*/}
+                            {/*            </Grid>*/}
+                            {/*            <Grid item xs={12}>*/}
+                            {/*                <Paper className={classes.paper} elevation={0}>*/}
+                            {/*                    <div className={"form-group"}>*/}
+                            {/*                        <label htmlFor={"message"} className={"form-label"}> Message </label>*/}
+                            {/*                        <br/>*/}
+                            {/*                        <textarea className={"form-control"} style={{width: "100%"}} rows={"5"} value={this.state.message} onChange={this.onMessageChange.bind(this)} />*/}
+                            {/*                    </div>*/}
+                            {/*                </Paper>*/}
+                            {/*            </Grid>*/}
+                            {/*            /!*<Grid item xs={3}>*!/*/}
+                            {/*            /!*    <Paper className={classes.paper}>xs=3</Paper>*!/*/}
+                            {/*            /!*</Grid>*!/*/}
+                            {/*            /!*<Grid item xs={3}>*!/*/}
+                            {/*            /!*    <Paper className={classes.paper}>xs=3</Paper>*!/*/}
+                            {/*            /!*</Grid>*!/*/}
+                            {/*            /!*<Grid item xs={3}>*!/*/}
+                            {/*            /!*    <Paper className={classes.paper}>xs=3</Paper>*!/*/}
+                            {/*            /!*</Grid>*!/*/}
+                            {/*        </Grid>*/}
+                            {/*        <button type={"submit"} className={"btn btn-primary"} style={{"margin-top": "10px"}}> Submit </button>*/}
+                            {/*    </div>*/}
+                            {/*</form>*/}
 
 
                         </div>
